@@ -1,0 +1,165 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: arial, verdana, helvetica;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*Html formatting*/
+
+html {
+    background-color: rgba(255, 255, 240, 0.966);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Body Formatting*/
+
+body {
+    width: 75%;
+}
+
+@media (max-width:500px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+@media (max-width:500px) {
+    header {
+        padding-top: unset;
+    }
+}
+
+.header {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 5px #850223 solid;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+}
+
+.header img {
+    width: 100px;
+}
+
+@media (max-width: 965px) {
+    .header h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .smallHide {
+        display: none;
+    }
+    .header img {
+        width: 65px;
+    }
+    .header h1 {
+        font-size: 35px;
+    }
+}
+
+
+/*Navbar*/
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 2px 0;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    min-width: fit-content;
+    max-width: 180px;
+    padding: 5px;
+    background-color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transition: 0.2s;
+    color: white;
+    background-color: rgb(133, 2, 35);
+}
+
+
+/*Plataforma aulas*/
+
+.video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+    margin-top: 20px;
+    padding: 50px;
+    border: 5px #850223 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.midiasImg {
+    width: 300px;
+}
+
+.footerLogo {
+    width: 200px;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+}
